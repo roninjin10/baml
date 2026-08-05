@@ -1,0 +1,1 @@
+{"compilerOptions":{"allowNonTsExtensions":true,"module":"esnext","moduleResolution":"bundler","strict":true,"target":"es2022","plugins":[{"name":"@boundaryml/baml-tooling/typescript-plugin","root":"/Users/williamcory/baml/.smithers/artifacts/upstream-ts-tooling/demos/lsp-project"}]},"files":["consumer.ts"]}
