@@ -24,7 +24,6 @@ export function CreateDraftPr({ outputs, input }: CreateDraftPrProps) {
     <Task
       id="create-draft-pr"
       output={outputs.bttPr}
-      sideEffect={{ idempotent: true }}
       needs={{ pre: "preflight", doc: "finalize-doc", check: "verify-series" }}
       deps={{ pre: outputs.bttPreflight, doc: outputs.bttDoc, check: outputs.bttSeriesCheck }}
       timeoutMs={15 * 60_000}
