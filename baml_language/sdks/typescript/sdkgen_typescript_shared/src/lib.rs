@@ -22,6 +22,7 @@ pub mod sdkgen_typescript_web;
 mod emit;
 mod leaf;
 mod routing;
+mod tooling;
 mod translate_ty;
 
 use std::{
@@ -32,6 +33,9 @@ use std::{
 
 use baml_codegen_types::SymbolPool;
 pub use baml_codegen_types::{NamingConvention, OutputType};
+pub use tooling::{
+    ToolingDeclarationRole, ToolingEmitOutput, ToolingMappedSpan, emit_tooling_module,
+};
 
 use crate::{
     emit::{build_emitted, typemap_file::render_typemap_module},
